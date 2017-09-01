@@ -1,4 +1,4 @@
-title: "S3 Download"
+title: "Appledoc"
 summary: This step allows to download a file from an S3 bucket.
 description: |-
    This step allows to download a file from an S3 bucket using an Access/secret keypair for authentication.

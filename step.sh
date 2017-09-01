@@ -107,6 +107,20 @@ fi
 echo_info "Installing appledoc..."
 brew install appledoc
 
+
+echo_info "Installing appledoc's templates"
+TEMPLATE_DIR="/usr/local/bin/$(dirname $(readlink `which appledoc`))/../Templates"
+
+if [ ! -d "temp_download" ]; then
+  mkdir temp_download
+  cd temp_download
+  wget -nv https://github.com/tomaz/appledoc/archive/master.zip
+  unzip -q master.zip
+  rm -rf "$TEMPLATE_DIR"
+  cp -r appledoc-master/Templates "$TEMPLATE_DIR"
+  cd -
+fi
+
 BUILD_DIR="./appledoc"
 
 [ -e "$BUILD_DIR" ] || mkdir "$BUILD_DIR"
@@ -117,7 +131,6 @@ if [ ! -z "$readme_path" ]; then
   README_ARG="--index-desc ${readme_path}"
 fi
 
-TEMPLATE_DIR="/usr/local/bin/$(dirname $(readlink `which appledoc`))/../Templates"
 
 echo "Generating Appledocs..."
 /usr/local/bin/appledoc --print-settings \
