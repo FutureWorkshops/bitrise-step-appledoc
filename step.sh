@@ -97,6 +97,8 @@ validate_required_input "output_file" $output_file
 #  more information: http://stackoverflow.com/questions/3963716/how-to-manually-expand-a-special-variable-ex-tilde-in-bash
 eval expanded_source_path="${source_path}"
 
+output_dir=`dirname $output_file`
+
 if [ ! -d "${source_path}" ]; then
   echo_fail "The source folder doesn't exist at: ${source_path}"
   exit 1
@@ -108,6 +110,7 @@ brew install appledoc
 BUILD_DIR="./appledoc"
 
 [ -e "$BUILD_DIR" ] || mkdir "$BUILD_DIR"
+[ -e "$output_dir" ] || mkdir -p "$output_dir"
 
 README_ARG=" "
 if [ ! -z "$readme_path" ]; then
