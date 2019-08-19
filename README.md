@@ -1,5 +1,5 @@
-# Download file form S3
-This step allows to install a pkg on a mac.
+# Create AppleDoc files
+This step allows the generation of apple docs files from templates, and code comments.
 
 ## How to use this Step
 
