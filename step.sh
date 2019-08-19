@@ -118,8 +118,9 @@ if [ ! -d "temp_download" ]; then
   unzip -q master.zip
   rm -rf "$TEMPLATE_DIR"
   cp -r appledoc-master/Templates "$TEMPLATE_DIR"
-  rm -rf temp_download
+  rm -rf appledoc-master
   cd -
+  rm -rf temp_download
 fi
 
 BUILD_DIR="./appledoc"
@@ -143,6 +144,7 @@ echo "Generating Appledocs..."
 if [ $? -eq 0 ]; then
   echo "Generating documentation archives..."
   zip -rq "$output_file" "$BUILD_DIR/html"
+  rm -rf "$BUILD_DIR"
 else
   echo "Appledoc encountered an issue."
   exit 1
