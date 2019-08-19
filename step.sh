@@ -118,6 +118,7 @@ if [ ! -d "temp_download" ]; then
   unzip -q master.zip
   rm -rf "$TEMPLATE_DIR"
   cp -r appledoc-master/Templates "$TEMPLATE_DIR"
+  rm -rf temp_download
   cd -
 fi
 
