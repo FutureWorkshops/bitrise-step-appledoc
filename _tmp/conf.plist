@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>--company-id</key>
+	<string>com.futureworkshops</string>
+	<key>--ignore</key>
+	<array>
+		<string>ThirdParty</string>
+		<string>Libraries</string>
+		<string>Frameworks</string>
+		<string>Testing</string>
+	</array>
+	<key>--clean-output</key>
+	<true/>
+	<key>--install-docset</key>
+	<false/>
+	<key>--create-docset</key>
+	<false/>
+	<key>--logformat</key>
+	<integer>1</integer>
+	<key>--print-settings</key>
+	<true/>
+	<key>--project-company</key>
+	<string>Future Workshops</string>
+	<key>--project-name</key>
+	<string>appledoc</string>
+	<key>--repeat-first-par</key>
+	<false/>
+</dict>
+</plist>

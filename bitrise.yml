@@ -22,7 +22,7 @@ workflows:
         inputs:
           - source_path: ../fixture/source
           - appledoc_conf: conf.plist
-          - readme_path: readme.md
+          - readme_path: ../README.md
           - output_file: docs.zip
 
   # ----------------------------------------------------------------
