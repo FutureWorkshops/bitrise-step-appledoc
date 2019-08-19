@@ -1,7 +1,7 @@
 title: "Appledoc"
-summary: This step allows to download a file from an S3 bucket.
+summary: This step allows the creation of apple docs
 description: |-
-   This step allows to download a file from an S3 bucket using an Access/secret keypair for authentication.
+   This step allows the creation of apple docs HTML files from a template, and code comments.
 website: https://github.com/FutureWorkshops/bitrise-step-s3-download
 source_code_url: https://github.com/FutureWorkshops/bitrise-step-s3-download
 host_os_tags:
