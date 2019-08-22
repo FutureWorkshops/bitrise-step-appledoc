@@ -2,17 +2,15 @@ title: "Appledoc"
 summary: This step allows the creation of apple docs
 description: |-
    This step allows the creation of apple docs HTML files from a template, and code comments.
-website: https://github.com/FutureWorkshops/bitrise-step-s3-download
-source_code_url: https://github.com/FutureWorkshops/bitrise-step-s3-download
+website: https://github.com/FutureWorkshops/bitrise-step-appledoc
+source_code_url: https://github.com/FutureWorkshops/bitrise-step-appledoc
 host_os_tags:
-  - osx-10.10
-  - osx-10.9
+  - osx-10.14
 project_type_tags:
   - ios
   - xamarin
 type_tags:
-  - amazon
-  - s3
+  - utility
 is_requires_admin_user: true
 is_always_run: false
 is_skippable: false
